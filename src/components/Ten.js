@@ -7,8 +7,6 @@ import './../index.css';
 class Posts extends Component {
   postsStyle = {
     backgroundImage: `url(${sky1})`,
-    backgroundSize: 'cover',
-    backgroundRepeat: 'repeat',
   }
 
   render() {
@@ -39,7 +37,7 @@ class Ten extends Component {
   baseStyle = {
     backgroundImage: `url(${moss1})`,
     backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat',
+    backgroundRepeat: 'no-repeat'
   }
 
   render() {

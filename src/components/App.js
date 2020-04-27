@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Route, Switch } from 'react-router-dom';
 import Login from './Login';
 import Ten from './Ten';
+import Fortyone from './Fortyone';
 import './../index.css';
 
 class Home extends Component {
@@ -12,7 +13,7 @@ class Home extends Component {
     };
   }
 
-  handleDisableLogin(value) {
+  handleDisableLogin() {
     this.setState({ displayLogin: false })
   }
 
@@ -41,6 +42,7 @@ class App extends Component {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/ten" component={Ten} />
+          <Route path="/fortyone" component={Fortyone} />
         </Switch>
       </div>
     )

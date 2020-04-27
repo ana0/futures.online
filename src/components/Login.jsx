@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import CloseButton from './CloseButton';
+import Modal from './base/Modal';
 
 export default class Login extends Component {
   constructor(props) {
@@ -11,12 +11,13 @@ export default class Login extends Component {
 
   render() {
     return (
-      <div className="modal" id="login">
-        <CloseButton handleClick={this.props.handleDisableLogin}/>
-        <h2>enter a username</h2>
-        <p>enter a public twitter username to best view the site</p>
-        <input type="text"></input>
-      </div>
+      <Modal handleClose={this.props.handleDisableLogin} contents={
+        <div>
+          <h2>enter a username</h2>
+          <p>enter a public twitter username to best view the site</p>
+          <input type="text"></input>
+        </div>}
+      />
     )
   }
 }

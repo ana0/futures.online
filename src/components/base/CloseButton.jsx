@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import close from '../assets/close.png'
+import close from '../../assets/close.png'
 
 export default class CloseButton extends Component {
   constructor(props) {
