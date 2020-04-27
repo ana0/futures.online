@@ -52,15 +52,11 @@ code {
 
 .modal {
   position: fixed;
-  height: 600px;
-  width: 50%;
   background: white;
-  left: 0;
-  right: 0;
-  top: 50px;
+  opacity: 60%;
   border-radius: 5px;
-  margin: auto;
-}
+/*  margin: auto;
+*/}
 
 .closeButton {
   height: 15px;

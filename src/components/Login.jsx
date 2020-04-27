@@ -11,13 +11,13 @@ export default class Login extends Component {
 
   render() {
     return (
-      <Modal handleClose={this.props.handleDisableLogin} contents={
+      <Modal margin="auto">
         <div>
           <h2>enter a username</h2>
           <p>enter a public twitter username to best view the site</p>
           <input type="text"></input>
-        </div>}
-      />
+        </div>
+      </Modal>
     )
   }
 }

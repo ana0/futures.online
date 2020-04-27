@@ -1,7 +1,8 @@
-import React, { Component } from 'react'
-import cg1 from '../assets/cg1.jpg'
-import moss1 from '../assets/moss1.jpg'
-import sky1 from '../assets/sky1.jpg'
+import React, { Component } from 'react';
+import cg1 from '../assets/cg1.jpg';
+import moss1 from '../assets/moss1.jpg';
+import sky1 from '../assets/sky1.jpg';
+import Background from './base/Background';
 import './../index.css';
 
 class Posts extends Component {
@@ -42,10 +43,10 @@ class Ten extends Component {
 
   render() {
     return (
-      <div className="main" id="ten" style={ this.baseStyle }>
-       <ScrollPic />
-       <Posts />
-    </div>
+      <Background file={moss1} id="ten">
+        <ScrollPic />
+        <Posts />
+      </Background>
     )
   }
 }

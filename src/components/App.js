@@ -1,33 +1,9 @@
 import React, { Component } from 'react'
 import { Route, Switch } from 'react-router-dom';
-import Login from './Login';
+import Home from './Home';
 import Ten from './Ten';
 import Fortyone from './Fortyone';
 import './../index.css';
-
-class Home extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      displayLogin: true,
-    };
-  }
-
-  handleDisableLogin() {
-    this.setState({ displayLogin: false })
-  }
-
-  render() {
-    return (
-      <div className="main" id="home">
-      {this.state.displayLogin ?
-       <Login handleDisableLogin={this.handleDisableLogin.bind(this)} /> :
-       null
-      }
-    </div>
-    )
-  }
-}
 
 class App extends Component {
   constructor(props) {
