@@ -36,20 +36,6 @@ code {
   height: 150px;
 }
 
-.posts {
-  position: fixed;
-  overflow: auto;
-  top: 100px;
-  height: 100%;
-  width: 100%;
-  left: 350px;
-  border: white;
-  border-style: solid;
-  border-width: 10px;
-  background-size: 'cover';
-  background-repeat: 'repeat';
-}
-
 .modal {
   position: fixed;
   background: white;
@@ -85,6 +71,87 @@ code {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
+.dropdown {
+  float: left;
+  overflow: hidden;
+  position: fixed;
+  top: 17px;
+}
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+.dropdown:hover .dropbtn {
+  background-color: red;
+}
+.dropdownContent {
+  display: none;
+  position: fixed;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  right: 0px;
+  top: 53px;
+}
+.dropdownContent p {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdownContent p:hover {
+  background-color: #ddd;
+}
+.dropdown:hover .dropdownContent {
+  display: block;
+}
+.smallUserImgRight {
+  position: fixed;
+  width: 30px;
+  top: 19px;
+  right: 66px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.postImage {
+  width: 50px;
+  margin: 20px;
+  align-self: center;
+}
+
+.posts {
+  position: fixed;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  top: 100px;
+  height: calc(100vh - 100px);
+  width: calc(100vw - 350px);
+  left: 350px;
+  border: white;
+  border-style: solid;
+  border-width: 10px;
+  background-size: 'cover';
+  background-repeat: 'repeat';
+}
+.post{
+  display: flex;
+}
+
+.boilertext {
+  width: 100%;
+  margin: auto;
+  padding: 20px;
+}
+
 @media only screen and (max-width: 450px) {
   .scrollpic {
     position: static;
@@ -100,5 +167,7 @@ code {
   .posts {
     top: 350px;
     left: 0px;
+    height: calc(100vh - 350px);
+    width: 100vw;
   }
 }

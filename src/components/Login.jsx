@@ -13,9 +13,9 @@ export default class Login extends Component {
     return (
       <Modal margin="auto">
         <div>
-          <h2>enter a username</h2>
-          <p>enter a public twitter username to best view the site</p>
-          <input type="text"></input>
+          <h2 className="boilertext">enter a username</h2>
+          <p className="boilertext">enter a public twitter username to best view the site</p>
+          <input style={{margin: "20px"}} type="text"></input>
         </div>
       </Modal>
     )
