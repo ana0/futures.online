@@ -7,6 +7,7 @@ import Modal from './base/Modal';
 import Dropdown from './base/Dropdown';
 import getRandInRange from '../utils/math';
 import Background from './base/Background';
+import { Link } from 'react-router-dom';
 import './../index.css';
 
 class Header extends Component {
@@ -23,8 +24,7 @@ class Header extends Component {
         <Dropdown button={
           <img className="smallUserImgRight" alt="user icon" src={user} />
         }>
-          <Loremipsum />
-          <Loremipsum />
+          <Link to="/ten"><Loremipsum/></Link>
         </Dropdown>
       </div>
     )
