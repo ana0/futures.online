@@ -77,17 +77,9 @@ code {
   position: fixed;
   top: 17px;
 }
-.dropdown .dropbtn {
-  font-size: 16px;
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
+.dropdown img {
   font-family: inherit; /* Important for vertical align on mobile phones */
   margin: 0; /* Important for vertical align on mobile phones */
-}
-.dropdown:hover .dropbtn {
-  background-color: red;
 }
 .dropdownContent {
   display: none;
@@ -113,6 +105,12 @@ code {
 .dropdown:hover .dropdownContent {
   display: block;
 }
+.dropdown a {
+  display: none;
+}
+.dropdown:hover a {
+  display: block;
+}
 .smallUserImgRight {
   position: fixed;
   width: 30px;
@@ -120,6 +118,7 @@ code {
   right: 66px;
   height: 30px;
   cursor: pointer;
+  z-index: 10;
 }
 
 .postImage {
