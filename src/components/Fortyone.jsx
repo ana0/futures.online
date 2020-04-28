@@ -1,5 +1,6 @@
-import React, { Component } from 'react'
-import moss from '../assets/moss2.jpg'
+import React, { Component } from 'react';
+import moss from '../assets/moss2.jpg';
+import sky from '../assets/sky2.jpg';
 import Loremipsum from './base/Loremipsum';
 import Modal from './base/Modal';
 import getRandInRange from '../utils/math';
@@ -7,9 +8,16 @@ import Background from './base/Background';
 import './../index.css';
 
 class Header extends Component {
+  baseStyle = {
+    backgroundImage: `url(${sky})`,
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat'
+  }
+
   render() {
     return (
-      <div className="header" id="header">
+      <div className="header" id="header" style={this.baseStyle}>
+        <button className="blueHeaderButton" />
       </div>
     )
   }
