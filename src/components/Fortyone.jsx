@@ -21,6 +21,7 @@ class Header extends Component {
     return (
       <div className="header" id="header" style={this.baseStyle}>
         <button className="blueHeaderButton" />
+        <img className="smallUserImgRight" alt="user icon" src={user} />
         <Dropdown button={
           <img className="smallUserImgRight" alt="user icon" src={user} />
         }>
