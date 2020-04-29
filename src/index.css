@@ -53,8 +53,8 @@ code {
 .belowheader {
   position: fixed;
   margin-top: 64px;
-  top: 64px !important;
-}
+/*  top: 64px !important;
+*/}
 
 .closeButton {
   height: 15px;
