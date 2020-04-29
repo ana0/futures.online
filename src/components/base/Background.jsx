@@ -5,7 +5,7 @@ export default class Background extends Component {
   baseStyle = {
     backgroundImage: `url(${this.props.file})`,
     backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat'
+    backgroundRepeat: 'no-repeat',
   }
 
   render() {

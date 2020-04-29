@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-// import Dropdown from 'react-dropdown';
-import moss from '../assets/moss2.jpg';
-import sky from '../assets/sky2.jpg';
-import user from '../assets/user.png';
+import bg from '../assets/41.png';
+import header from '../assets/41header.jpg';
+import user from '../assets/userbg.jpg';
 import Loremipsum from './base/Loremipsum';
 import Modal from './base/Modal';
 import getRandInRange from '../utils/math';
@@ -14,9 +13,10 @@ import './../index.css';
 
 class Header extends Component {
   baseStyle = {
-    backgroundImage: `url(${sky})`,
+    backgroundImage: `url(${header})`,
     backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat'
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'right top'
   }
 
   render() {
@@ -24,7 +24,7 @@ class Header extends Component {
       <div className="header" id="header" style={this.baseStyle}>
         <button className="blueHeaderButton" onClick={() => this.props.spawnPost()}/>
         <Dropdown buttonClass="smallUserImgRight" buttonSrc={user}>
-          <Link to="/profile"><Loremipsum>Your Profile</Loremipsum></Link>
+          <Link to="/profile">Your Profile</Link>
         </Dropdown>
       </div>
     )
@@ -52,7 +52,7 @@ class Fortyone extends Component {
 
   render() {
     return (
-      <Background file={moss} id="fortyone">
+      <Background file={bg} id="fortyone">
       <Header spawnPost={this.spawnPost.bind(this)}/>
       {this.state.displayPosts ?
         this.state.initialPosts.map((post) => {

@@ -59,7 +59,7 @@ code {
 .blueHeaderButton {
   position: fixed;
   width: 112px;
-  background-color: blue;
+  background-image: url('./assets/bluebutton.jpg');
   top: 9px;
   right: 112px;
   outline: none;
@@ -116,7 +116,7 @@ code {
 @media only screen and (max-width: 450px) {
   .scrollpic {
     position: static;
-    margin: 100px auto;
+    margin: 100px calc((100vw - 140px)/2) 100px calc((100vw - 150px)/2);
   }
 }
 
