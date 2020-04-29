@@ -26,19 +26,6 @@ class Header extends Component {
   render() {
     return (
       <div className="header" id="header" style={this.baseStyle}>
-{/*        <Dropdown
-          className='skybg'
-          controlClassName='header skybg'
-          menuClassName="belowheader"
-          placeholderClassName='belowheader'
-          options={this.dropdownOptions}
-          onChange={() => {}}
-          value={this.dropdownOptions}
-          arrowClosed={this.arrowClosed}
-          arrowOpen={this.arrowOpen}
-          placeholder="Select an option" />;*/}
-
-
         <button className="blueHeaderButton" />
         <Dropdown button={
           <img className="smallUserImgRight" alt="user icon" src={user} />

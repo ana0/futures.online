@@ -50,11 +50,6 @@ code {
   background-color: transparent;
 }
 
-.belowheader {
-  position: fixed;
-  top: 64px !important;
-}
-
 .closeButton {
   height: 15px;
   margin: 10px;
