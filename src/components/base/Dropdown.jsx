@@ -19,10 +19,8 @@ export default class Dropdown extends Component {
 
   render() {
     return (
-        <div className="dropdown" style={this.baseStyle}>
-        <div onClick={this.handleClick.bind(this)} >
-          <img className="smallUserImgRight" alt="user icon" src={user} />
-        </div>
+      <div>
+        <img className={this.props.buttonClass} alt="user icon" src={this.props.buttonSrc} onClick={() => this.handleClick()}/>
         {this.state.display ?
           <div className="dropdownContent">
             {this.props.children}
