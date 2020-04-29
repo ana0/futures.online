@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
+import Dropdown from 'react-dropdown';
 import moss from '../assets/moss2.jpg';
 import sky from '../assets/sky2.jpg';
 import user from '../assets/user.png';
 import Loremipsum from './base/Loremipsum';
 import Modal from './base/Modal';
-import Dropdown from './base/Dropdown';
 import getRandInRange from '../utils/math';
 import Background from './base/Background';
 import { Link } from 'react-router-dom';
+import 'react-dropdown/style.css';
 import './../index.css';
 
 class Header extends Component {
@@ -17,16 +18,23 @@ class Header extends Component {
     backgroundRepeat: 'no-repeat'
   }
 
+  dropdownOptions = [<Link to="/ten"><Loremipsum/></Link>]
+  arrowClosed = <img className="smallUserImgRight" alt="user icon" src={user} />
+  arrowOpen = <img className="smallUserImgRight" alt="user icon" src={user} />
+
   render() {
     return (
-      <div className="header" id="header" style={this.baseStyle}>
+      <div className="header" id="header">
+        <Dropdown
+          className='skybg'
+          controlClassName='header skybg'
+          options={this.dropdownOptions}
+          onChange={() => {}}
+          value={this.dropdownOptions}
+          arrowClosed={this.arrowClosed}
+          arrowOpen={this.arrowOpen}
+          placeholder="Select an option" />;
         <button className="blueHeaderButton" />
-        <img className="smallUserImgRight" alt="user icon" src={user} />
-        <Dropdown button={
-          <img className="smallUserImgRight" alt="user icon" src={user} />
-        }>
-          <Link to="/ten"><Loremipsum/></Link>
-        </Dropdown>
       </div>
     )
   }
