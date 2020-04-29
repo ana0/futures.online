@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Dropdown from 'react-dropdown';
+// import Dropdown from 'react-dropdown';
 import moss from '../assets/moss2.jpg';
 import sky from '../assets/sky2.jpg';
 import user from '../assets/user.png';
@@ -7,6 +7,7 @@ import Loremipsum from './base/Loremipsum';
 import Modal from './base/Modal';
 import getRandInRange from '../utils/math';
 import Background from './base/Background';
+import Dropdown from './base/Dropdown';
 import { Link } from 'react-router-dom';
 import 'react-dropdown/style.css';
 import './../index.css';
@@ -19,23 +20,31 @@ class Header extends Component {
   }
 
   dropdownOptions = [<Link to="/ten"><Loremipsum/></Link>]
-  arrowClosed = <img className="smallUserImgRight" alt="user icon" src={user} />
-  arrowOpen = <img className="smallUserImgRight" alt="user icon" src={user} />
+  // arrowClosed = <img className="smallUserImgRight" alt="user icon" src={user} />
+  // arrowOpen = <img className="smallUserImgRight" alt="user icon" src={user} />
 
   render() {
     return (
-      <div className="header" id="header">
-        <Dropdown
+      <div className="header" id="header" style={this.baseStyle}>
+{/*        <Dropdown
           className='skybg'
           controlClassName='header skybg'
           menuClassName="belowheader"
+          placeholderClassName='belowheader'
           options={this.dropdownOptions}
           onChange={() => {}}
           value={this.dropdownOptions}
           arrowClosed={this.arrowClosed}
           arrowOpen={this.arrowOpen}
-          placeholder="Select an option" />;
+          placeholder="Select an option" />;*/}
+
+
         <button className="blueHeaderButton" />
+        <Dropdown button={
+          <img className="smallUserImgRight" alt="user icon" src={user} />
+        }>
+          <Link to="/ten"><Loremipsum/></Link>
+        </Dropdown>
       </div>
     )
   }
