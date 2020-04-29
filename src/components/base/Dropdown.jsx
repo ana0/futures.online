@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import user from '../../assets/user.png';
 import './../../dropdown.css';
 
 export default class Dropdown extends Component { 
@@ -13,17 +12,23 @@ export default class Dropdown extends Component {
   baseStyle = {
   }
 
-  handleClick() {
+  handleDisplayOn() {
     this.setState({ display: true })
+  }
+
+  handleDisplayOff() {
+    this.setState({ display: false })
   }
 
   render() {
     return (
       <div>
-        <img className={this.props.buttonClass} alt="user icon" src={this.props.buttonSrc} onClick={() => this.handleClick()}/>
+        <img className={this.props.buttonClass} alt="user icon" src={this.props.buttonSrc} onClick={() => this.handleDisplayOn()}/>
         {this.state.display ?
+          <div className="main" onClick={() => this.handleDisplayOff()}>
           <div className="dropdownContent">
             {this.props.children}
+          </div>
           </div> :
           null}
       </div>

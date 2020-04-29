@@ -33,11 +33,18 @@ class Posts extends Component {
 }
 
 class ScrollPic extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      url: "https://lattice.tools/MemStackShapeTracer2"
+    };
+  }
+
   render() {
     return (
-      <div className="scrollpic" id="scrollpic">
-      <img alt='' src={cg1} />
-      </div>
+      <a href={this.state.url}>
+      <iframe className="scrollpic" title="lattice.tools" src={this.state.url} />
+      </a>
     )
   }
 }
@@ -57,7 +64,7 @@ class Ten extends Component {
         <Posts>
           { this.state.posts.map((post) => {
             return (
-              <Post>
+              <Post key={post}>
                 {post}
               </Post> 
             ) 

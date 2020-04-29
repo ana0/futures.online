@@ -10,7 +10,7 @@ export default class Modal extends Component {
   } 
 
   baseStyle = {
-    height: this.props.height || '600px',
+    height: this.props.height,
     width: this.props.width || '50%',
     left: this.props.left || '0px',
     right: this.props.right || '0px',

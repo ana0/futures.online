@@ -19,16 +19,12 @@ class Header extends Component {
     backgroundRepeat: 'no-repeat'
   }
 
-  dropdownOptions = [<Link to="/ten"><Loremipsum/></Link>]
-  // arrowClosed = <img className="smallUserImgRight" alt="user icon" src={user} />
-  // arrowOpen = <img className="smallUserImgRight" alt="user icon" src={user} />
-
   render() {
     return (
       <div className="header" id="header" style={this.baseStyle}>
-        <button className="blueHeaderButton" />
+        <button className="blueHeaderButton" onClick={() => this.props.spawnPost()}/>
         <Dropdown buttonClass="smallUserImgRight" buttonSrc={user}>
-          <Link to="/ten"><Loremipsum/></Link>
+          <Link to="/profile"><Loremipsum>Your Profile</Loremipsum></Link>
         </Dropdown>
       </div>
     )
@@ -40,7 +36,8 @@ class Fortyone extends Component {
     super(props);
     this.state = {
       displayPosts: true,
-      posts: ['one', 'two', 'three']
+      initialPosts: ['one', 'two', 'three'],
+      spawnedPosts: []
     };
   } 
 
@@ -48,12 +45,31 @@ class Fortyone extends Component {
     this.setState({ displayPosts: false })
   }
 
+  spawnPost() {
+    const index = getRandInRange(0, this.state.initialPosts.length-1)
+    this.setState({ spawnedPosts: [...this.state.spawnedPosts, this.state.initialPosts[index]] })
+  }
+
   render() {
     return (
       <Background file={moss} id="fortyone">
-      <Header />
+      <Header spawnPost={this.spawnPost.bind(this)}/>
       {this.state.displayPosts ?
-        this.state.posts.map((post) => {
+        this.state.initialPosts.map((post) => {
+          return (
+            <Modal 
+              height={null}
+              top={`${getRandInRange(100, window.innerHeight-100)}px`}
+              left={`${getRandInRange(0, window.innerWidth/2)}px`}
+              key={post} >
+                <Loremipsum />
+            </Modal> 
+          ) 
+        }):
+        null
+      }
+      {this.state.displayPosts ?
+        this.state.spawnedPosts.map((post) => {
           return (
             <Modal 
               height='100px'
@@ -63,7 +79,7 @@ class Fortyone extends Component {
                 <Loremipsum />
             </Modal> 
           ) 
-        }) :
+        }):
         null
       }
     </Background>
