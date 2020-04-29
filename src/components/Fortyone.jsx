@@ -28,6 +28,7 @@ class Header extends Component {
         <Dropdown
           className='skybg'
           controlClassName='header skybg'
+          menuClassName="belowheader"
           options={this.dropdownOptions}
           onChange={() => {}}
           value={this.dropdownOptions}
