@@ -3,6 +3,7 @@ import bg from '../assets/10.png';
 import texbg from '../assets/texbg.jpg';
 import circle from '../assets/circleTexture.png';
 import Background from './base/Background';
+import posts from './../posts.json';
 import './../index.css';
 
 class Post extends Component {
@@ -11,7 +12,7 @@ class Post extends Component {
     return (
       <div className="post">
         <img alt="user icon" src={circle} className="postImage" />
-        <p className="boilertext">{this.props.children}</p>
+        <p className="ptext">{this.props.children}</p>
       </div>
     )
   }
@@ -35,13 +36,15 @@ class ScrollPic extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      url: "https://lattice.tools/MemStackShapeTracer2"
+      url: "https://lattice.tools/MemStackShapeTracer"
     };
   }
 
   render() {
     return (
+      <a href={this.state.url}>
       <iframe className="scrollpic" title="lattice.tools" src={this.state.url} />
+      </a>
     )
   }
 }
@@ -50,7 +53,7 @@ class Ten extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      posts: ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight']
+      posts: posts.posts,
     };
   }
 
