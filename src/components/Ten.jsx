@@ -42,9 +42,11 @@ class ScrollPic extends Component {
 
   render() {
     return (
+      <div className="scrollpic">
       <a href={this.state.url}>
-      <iframe className="scrollpic" title="lattice.tools" src={this.state.url} />
+      <iframe className="big" scrolling="no" title="lattice.tools" src={this.state.url} />
       </a>
+      </div>
     )
   }
 }
