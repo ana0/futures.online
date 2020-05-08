@@ -8,7 +8,6 @@ import getRandInRange from '../utils/math';
 import Background from './base/Background';
 import Dropdown from './base/Dropdown';
 import { Link } from 'react-router-dom';
-import 'react-dropdown/style.css';
 import './../index.css';
 
 class Header extends Component {
