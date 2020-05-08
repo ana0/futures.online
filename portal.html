@@ -1,0 +1,24 @@
+
+<style>
+  .scrollpic {
+    width: 140px;
+    border: white;
+    border-style: solid;
+    border-width: 10px;
+    overflow: auto;
+    height: 150px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .big {
+    width: 1000px;
+    height: 1000px;
+    overflow: hidden;
+  }
+</style>
+
+<div className="scrollpic">
+  <a href={url}>
+    <iframe className="big" scrolling="no" title="sitename" src={url} />
+  </a>
+</div>
