@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import moss from '../assets/moss3.jpg'
-import Login from './Login';
+import Join from './Join';
 import Background from './base/Background';
 
 export default class Home extends Component {
@@ -19,7 +19,7 @@ export default class Home extends Component {
     return (
       <Background file={moss} id="home">
         {this.state.displayLogin ?
-         <Login /> :
+         <Join /> :
          null
         }
       </Background>
