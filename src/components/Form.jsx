@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-
 export default class Form extends Component {
   constructor(props) {
     super(props);
@@ -44,7 +43,6 @@ export default class Form extends Component {
     })}`)
       .then(response => response.json())
   }
-
 
   render() {
     return (

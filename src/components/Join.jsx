@@ -11,24 +11,9 @@ export default class Join extends Component {
     };
   }
 
-  escapeHTML(unsafe) {
-    return unsafe.replace(/[&<"']/g, function(m) {
-      switch (m) {
-        case '&':
-          return '&amp;';
-        case '<':
-          return '&lt;';
-        case '"':
-          return '&quot;';
-        default:
-          return '&#039;';
-      }
-    });
-  };
-
   render() {
     return (
-      <Modal margin="auto">
+      <Modal margin="auto" height={'80%'}>
         <div>
           <h2 className="boilertext">portal constellation (reviving the webring)</h2>
           <p className="boilertext italics">

@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Route, Switch } from 'react-router-dom';
-import Portal from './Portal';
 import Ten from './Ten';
 import Home from './Home';
 import Fortyone from './Fortyone';
@@ -21,7 +20,6 @@ class App extends Component {
           <Route path="/profile" component={Ten} />
           <Route path="/ten" component={Ten} />
           <Route path="/fortyone" component={Fortyone} />
-          <Route path="/portal" component={Portal} />
           <Route path="/form" component={Home} />
         </Switch>
       </div>
