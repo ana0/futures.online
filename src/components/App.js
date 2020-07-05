@@ -20,7 +20,7 @@ class App extends Component {
           <Route path="/profile" component={Ten} />
           <Route path="/ten" component={Ten} />
           <Route path="/fortyone" component={Fortyone} />
-          <Route path="/joinform" component={Home} />
+          <Route path="/join" component={Home} />
         </Switch>
       </div>
     )
