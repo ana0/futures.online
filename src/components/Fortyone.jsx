@@ -21,7 +21,7 @@ class Header extends Component {
   render() {
     return (
       <div className="header" id="header" style={this.baseStyle}>
-        <button className="blueHeaderButton" onClick={() => this.props.spawnPost()}/>
+        <button className="blueButton rightHeaderButton shadowButton" onClick={() => this.props.spawnPost()}/>
         <Dropdown buttonClass="smallUserImgRight" buttonSrc={user}>
           <Link to="/profile">Your Profile</Link>
         </Dropdown>

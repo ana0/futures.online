@@ -15,7 +15,8 @@ export default class Modal extends Component {
     left: this.props.left || '0px',
     right: this.props.right || '0px',
     top: this.props.top || '50px',
-    margin: this.props.margin
+    margin: this.props.margin,
+    ...this.props.customStyle
   }
 
   handleClose() {

@@ -8,6 +8,7 @@ export default class Form extends Component {
       data: {
         name: '',
         url: '',
+        email: '',
         description: '',
       }
     };
@@ -19,6 +20,10 @@ export default class Form extends Component {
 
   handleUrlChange(e) {
     this.setState({url: e.target.value});
+  }
+
+  handleEmailChange(e) {
+    this.setState({email: e.target.value});
   }
 
   handleDescriptionChange(e) {
@@ -39,6 +44,7 @@ export default class Form extends Component {
     fetch(`${this.state.getUrl}${this.serialize({
       name: this.state.name,
       url: this.state.url,
+      email: this.state.email,
       description: this.state.description,
     })}`)
       .then(response => response.json())
@@ -49,37 +55,45 @@ export default class Form extends Component {
       <form id="test-form" onSubmit={this.handleSubmit.bind(this)}>
         
         <div>
-          <label className="boilertext">your name</label>
+          <label className="boilertext">name:</label>
           <input
             type="text"
             name="name"
             placeholder="your name"
-            style={{margin: "20px"}}
             onChange={this.handleNameChange.bind(this)}/>
         </div>
 
         <div>
-          <label className="boilertext">your url</label>
+          <label className="boilertext">url:</label>
           <input
             type="text"
             name="url"
             placeholder="url"
-            style={{margin: "20px"}}
             onChange={this.handleUrlChange.bind(this)}/>
+        </div>
+
+        <div>
+          <label className="boilertext">email:</label>
+          <input
+            type="text"
+            name="email"
+            placeholder="email"
+            onChange={this.handleEmailChange.bind(this)}/>
         </div>
         
         <div>
-          <label className="boilertext">short description</label>
+          <label className="boilertext">short description:</label>
           <input
             type="text"
             name="description"
             placeholder="description of your site"
-            style={{margin: "20px"}}
             onChange={this.handleDescriptionChange.bind(this)}/>
         </div>
 
         <div>
-          <button type="submit"id="submit-form">Submit</button>
+          <button className="blueButton formSubmitButton shadowButton"
+            type="submit"
+            id="submit-form"> </button>
         </div>
 
       </form>
