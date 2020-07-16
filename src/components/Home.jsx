@@ -11,6 +11,8 @@ export default class Home extends Component {
       urls: [
         "https://aos.arebyte.com/contents/hervisions-the-art-of-no-likes/",
         "https://lattice.tools/MemStackShapeTracer",
+        "http://sandracrispart.com/index.php/art-of-no-likes-launch/",
+        "http://julietagil.com/Nuestra-Victoria",
       ],
     };
   }
