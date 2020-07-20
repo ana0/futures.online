@@ -90,6 +90,13 @@ export default class Form extends Component {
             onChange={this.handleDescriptionChange.bind(this)}/>
         </div>
 
+        <p className="boilertext small">
+          if you're accepted to the webring, it means other sites throughout the webring 
+            will link to and display previews of your site. your name and site description may appear in a directory. 
+          we may email you with news and updates, but only things that concern the webring and your participation in it. 
+          if you'd like to leave the ring at any time, you can email sarahfriend@isthisa.com
+        </p>
+
         <div>
           <button className="blueButton formSubmitButton shadowButton"
             type="submit"

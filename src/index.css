@@ -142,13 +142,18 @@ input {
 }
 
 .boilertext {
-  width: calc(100% - 20px);
+  width: calc(100% - 30px);
   padding-left: 20px;
   padding-bottom: 20px;
+  padding-right: 10px;
   margin: auto;
   line-height: 1.3;
   overflow-wrap: break-word;
   word-wrap: break-word;
+}
+
+.small {
+  font-size: small;
 }
 
 .monospace {
@@ -187,5 +192,9 @@ input {
     left: 0px;
     height: calc(100vh - 350px);
     width: 100vw;
+  }
+
+  .modal {
+    width: 90% !important;
   }
 }
