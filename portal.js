@@ -3,8 +3,8 @@ window.addEventListener('load', function () {
     "https://aos.arebyte.com/contents/hervisions-the-art-of-no-likes/",
     "https://lattice.tools/MemStackShapeTracer",
     "https://possible.social/",
-    "http://sandracrispart.com/index.php/art-of-no-likes-launch/",
-    "http://julietagil.com/Nuestra-Victoria",
+    "https://sandracrispart.com/index.php/art-of-no-likes-launch/",
+    "https://julietagil.com/Nuestra-Victoria",
   ]
 
   const getRandInRange = (min, max) => {

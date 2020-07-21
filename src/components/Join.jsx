@@ -28,10 +28,10 @@ export default class Join extends Component {
           </p>          
           <p className="boilertext">
             <br />  
-            between the &lt;head&gt; tags of the site. If you'd like to have your site included, fill out the form below.
+            between the &lt;head&gt; tags of the site. If you have an artist website you'd like to have included, fill out the form below.
           </p>
           <p className="boilertext">
-            we'll review submissions on a rolling basis and add them to the webring as we go
+            we'll review submissions on a rolling basis until Sept 30th and add them to the webring as we go
           </p>
           <Form />
         </div>

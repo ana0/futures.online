@@ -92,15 +92,17 @@ export default class Form extends Component {
 
         <p className="boilertext small">
           if you're accepted to the webring, it means other sites throughout the webring 
-            will link to and display previews of your site. your name and site description may appear in a directory. 
-          we may email you with news and updates, but only things that concern the webring and your participation in it. 
+            will link to and display previews of your site. your name and site description may appear in a directory,
+           and there may be a future exhibtion of this webring that includes your site at <a href="https://www.arebyte.com/">
+           arebyte gallery</a>. 
+          we will email you with relevant news and updates, but only things that concern the webring and your participation in it. 
           if you'd like to leave the ring at any time, you can email sarahfriend@isthisa.com
         </p>
 
         <div>
           <button className="blueButton formSubmitButton shadowButton"
             type="submit"
-            id="submit-form"> </button>
+            id="submit-form">Submit</button>
         </div>
 
       </form>
