@@ -24,7 +24,7 @@ export default class Join extends Component {
             If you’d like to join our webring you can add a portal to any of your own websites by adding
           </p>
           <p className="boilertext monospace">
-            &lt;script type="text/javascript" src="https://cdn.jsdelivr.net/gh/ana0/futures.online@latest/portal.js"&gt;&lt;/script&gt;"
+            &lt;script type="text/javascript" src="https://cdn.jsdelivr.net/gh/ana0/futures.online/portal.js"&gt;&lt;/script&gt;"
           </p>          
           <p className="boilertext">
             <br />  
