@@ -8,7 +8,7 @@ export default class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      urls: [
+      sites: [
         {url: "https://aos.arebyte.com/contents/hervisions-the-art-of-no-likes/", https: true},
         {url: "https://lattice.tools/MemStackShapeTracer", https: true},
         {url: "http://sandracrispart.com/index.php/art-of-no-likes-launch/", https: false, img: 'sandracrispart.jpg'},
@@ -20,8 +20,8 @@ export default class Home extends Component {
   render() {
     return (
       <Background file={moss} id="home">
-        {this.state.urls.map((url) => {
-            return <Portal url={url} />
+        {this.state.sites.map((site) => {
+            return <Portal site={site} />
           })
         }
         <Join />
