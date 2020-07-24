@@ -30,7 +30,6 @@ window.addEventListener('load', function () {
     inner = document.createElement("img"); 
     inner.setAttribute('src', `https://possible.social/${site.img}`);
     inner.setAttribute('scrolling', "no");
-    inner.setAttribute('title', "Art of No Likes");
     inner.style.overflow = 'hidden';
   }
 
