@@ -9,10 +9,10 @@ export default class Home extends Component {
     super(props);
     this.state = {
       urls: [
-        "https://aos.arebyte.com/contents/hervisions-the-art-of-no-likes/",
-        "https://lattice.tools/MemStackShapeTracer",
-        "http://sandracrispart.com/index.php/art-of-no-likes-launch/",
-        "http://julietagil.com/Nuestra-Victoria",
+        {url: "https://aos.arebyte.com/contents/hervisions-the-art-of-no-likes/", https: true},
+        {url: "https://lattice.tools/MemStackShapeTracer", https: true},
+        {url: "http://sandracrispart.com/index.php/art-of-no-likes-launch/", https: false, img: 'sandracrispart.jpg'},
+        {url: "http://julietagil.com/Nuestra-Victoria", https: false, img: 'sandracrispart.jpg'},
       ],
     };
   }

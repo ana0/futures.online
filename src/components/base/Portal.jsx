@@ -22,9 +22,17 @@ export default class Portal extends Component {
     return (
       <div>
         <div className="portal" style={{ top: `${this.state.top}px`, left: `${this.state.left}px` }}>
-          <iframe className="big" scrolling="no" title="Art of No Likes" src={this.props.url} />
+          {this.props.url.https ?
+          <iframe className="big" scrolling="no" title="Art of No Likes" src={this.props.url.url} /> :
+          <img
+            className="bigImg"
+            alt="portal"
+            scrolling="no"
+            title="Art of No Likes"
+            src={process.env.PUBLIC_URL + this.props.url.img} />
+          }
         </div>
-        <a href={this.props.url}>
+        <a href={this.props.url.url}>
             <img alt="enter" src={arrow} className="arrow" style={{ top: `${this.state.top+15}px`, left: `${this.state.left}px` }}/>
         </a>
       </div>

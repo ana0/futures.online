@@ -68,6 +68,10 @@ input {
   overflow: hidden;
 }
 
+.bigIMG {
+  overflow: hidden;
+}
+
 .modal {
   position: fixed;
   background: white;
