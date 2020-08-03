@@ -47,7 +47,10 @@ export default class Form extends Component {
       email: this.state.email,
       description: this.state.description,
     })}`)
-      .then(response => response.json())
+      .then(response => {
+        this.props.setSubmitted();
+        return response.json();
+      })
   }
 
   render() {

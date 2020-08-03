@@ -12,7 +12,7 @@ export default class Home extends Component {
         {url: "https://aos.arebyte.com/contents/hervisions-the-art-of-no-likes/", https: true},
         {url: "https://lattice.tools/MemStackShapeTracer", https: true},
         {url: "http://sandracrispart.com/index.php/art-of-no-likes-launch/", https: false, img: 'sandracrispart.jpg'},
-        {url: "http://julietagil.com/Nuestra-Victoria", https: false, img: 'sandracrispart.jpg'},
+        {url: "http://julietagil.com/Nuestra-Victoria", https: false, img: 'julietagil.jpg'},
       ],
     };
   }
@@ -21,7 +21,7 @@ export default class Home extends Component {
     return (
       <Background file={moss} id="home">
         {this.state.sites.map((site) => {
-            return <Portal site={site} />
+            return <Portal site={site} key={site.url} />
           })
         }
         <Join />
