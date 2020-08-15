@@ -5,6 +5,12 @@ window.addEventListener('load', function () {
     {url: "https://possible.social/", https: true},
     {url: "http://sandracrispart.com/index.php/art-of-no-likes-launch/", https: false, img: 'sandracrispart.jpg'},
     {url: "http://julietagil.com/Nuestra-Victoria", https: false, img: 'julietagil.jpg'},
+    {url: "https://www.ourmachine.net/", https: true},
+    {url: "https://barrythrew.com/", https: true},
+    {url: "https://www.badalmer.com/", https: true},
+    {url: "https://dietrichmeyer.info/", https: true},
+    {url: "https://towhomthismayconcern.org/", https: true},
+    {url: "https://anti-materia.org/", https: true},
   ]
 
   const getRandInRange = (min, max) => {
