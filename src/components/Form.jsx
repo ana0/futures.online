@@ -100,6 +100,9 @@ export default class Form extends Component {
            arebyte gallery</a>. 
           we will email you with relevant news and updates, but only things that concern the webring and your participation in it. 
           if you'd like to leave the ring at any time, you can email sarahfriend@isthisa.com
+          <br /><br />
+          this project part of the Hervisions residency at Arebyte Onscreen - you can see more info about the residency and the 
+          other artworks <a href="https://aos.arebyte.com/contents/hervisions-the-art-of-no-likes/">here</a>
         </p>
 
         <div>
