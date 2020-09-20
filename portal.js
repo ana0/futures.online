@@ -11,7 +11,26 @@ window.addEventListener('load', function () {
     {url: "https://dietrichmeyer.info/", https: true},
     {url: "https://towhomthismayconcern.org/", https: true},
     {url: "https://anti-materia.org/", https: true},
-  ]
+    {url: "https://a.pureapparat.us/", https: true},
+    {url: "http://www.isladen.world/", https: false, img: 'isladen.jpg'},
+    {url: "https://michaelreale.format.com/", https: true},
+    {url: "https://www.carsonteal.com/", https: true},
+    {url: "https://boringmommyblogblog.wordpress.com/", https: true},
+    {url: "https://vincentcharlebois.com/", https: true},
+    {url: "https://verns.world", https: true},
+    {url: "https://palomakop.tv/", https: true},
+    {url: "https://garbageprintcamo.wordpress.com/", https: true},
+    {url: "https://www.hemligaskolan.se/", https: true},
+    {url: "https://yletalgnimlab.me/", https: true},
+    {url: "https://eviau.github.io/thiswebsite/index.html", https: true},
+    {url: "http://dagmarschuerrer.com/", https: false, img: 'dagmarschuerrer.jpg'},
+    {url: "https://rozina.neocities.org/", https: true},
+    {url: "https://www.francescoimola.com/", https: true},
+    {url: "https://lattice.tools/", https: true},
+    {url: "https://preppers.gallery/", https: true},
+    {url: "https://www.hervisions.world/", https: true},
+    {url: "http://lovelanguages.melaniehoff.com/", https: false, img: 'digitallovelanguages.png'}
+]
 
   const getRandInRange = (min, max) => {
     return Math.floor(Math.random() * (max - min) + min);
