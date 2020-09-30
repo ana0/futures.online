@@ -38,7 +38,13 @@ export default class Home extends Component {
         {url: "https://lattice.tools/", https: true},
         {url: "https://preppers.gallery/", https: true},
         {url: "https://www.hervisions.world/", https: true},
-        {url: "http://lovelanguages.melaniehoff.com/", https: false, img: 'digitallovelanguages.png'}
+        {url: "http://lovelanguages.melaniehoff.com/", https: false, img: 'digitallovelanguages.png'},
+        {url: "http://www.srswthi.com/", https: false, img: 'saraswathisubbaraman.png'},
+        {url: "https://kevinclancy.studio/", https: true},
+        {url: "http://www.offsiteproject.org/", https: false, img: 'offsiteproject.png'},
+        {url: "https://www.tuckernickman.com/beginning.html", https: true},
+        {url: "http://joemygan.com/", https: false, img: 'joemygan.jpg'},
+        {url: "https://kaleyflowers.com/", https: true}
       ],
     };
   }
