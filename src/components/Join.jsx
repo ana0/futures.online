@@ -31,19 +31,21 @@ export default class Join extends Component {
                 &emsp;&emsp;- Brenna Murphy
               </p>
               <p className="boilertext">
-                If you’d like to join our webring you can add a portal to any of your own websites by adding
+                Applications to join the webring are now closed! Check back soon for an update about our next steps
+              </p>
+              <p className="boilertext">
+                If you’d like to contribute to our webring you can still add a portal to any of your own websites by adding
               </p>
               <p className="boilertext monospace">
                 &lt;script type="text/javascript" src="https://cdn.jsdelivr.net/gh/ana0/futures.online/portal.js"&gt;&lt;/script&gt;
               </p>          
               <p className="boilertext">
                 <br />  
-                between the &lt;head&gt; tags of the site. If you have an artist website you'd like to have included, fill out the form below.
+                between the &lt;head&gt; tags of the site. 
               </p>
               <p className="boilertext">
-                we'll review submissions on a rolling basis until Sept 30th and add them to the webring as we go
+                Thank you for joining us in imagining an alternative internet!
               </p>
-              <Form setSubmitted={this.setSubmitted.bind(this)} />
             </div>
           ) : (
             <div>
