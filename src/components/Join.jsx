@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Modal from './base/Modal';
-import Form from './Form';
 
 export default class Join extends Component {
   constructor(props) {
