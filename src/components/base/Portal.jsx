@@ -14,7 +14,7 @@ export default class Portal extends Component {
   componentDidMount() {
     this.setState({
       top: getRandInRange(100, window.innerHeight-100),
-      left: getRandInRange(0, window.innerWidth/2)
+      left: getRandInRange(0, window.innerWidth)
     })
   }
  
