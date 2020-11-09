@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import getRandInRange from '../../utils/math';
 import arrow from '../../assets/arrow.png'
+import question from '../../assets/question.png'
 
 export default class Portal extends Component {
   constructor(props) {
@@ -34,6 +35,9 @@ export default class Portal extends Component {
         </div>
         <a href={this.props.site.url}>
             <img alt="enter" src={arrow} className="arrow" style={{ top: `${this.state.top+15}px`, left: `${this.state.left}px` }}/>
+        </a>
+        <a href="#">
+            <img alt="about" src={question} className="question" style={{ top: `${this.state.top+55}px`, left: `${this.state.left}px` }}/>
         </a>
       </div>
     )

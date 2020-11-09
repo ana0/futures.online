@@ -72,9 +72,21 @@ window.addEventListener('load', function () {
   arrow.style.left = `${horizontal}px`;
   arrow.style.zIndex = "110";
 
+  const question = document.createElement("img"); 
+  question.setAttribute('src', 'https://possible.social/question.png');
+  question.style.position = 'fixed';
+  question.style.width = '25px';
+  question.style.top = `${vertical+55}px`;
+  question.style.left = `${horizontal}px`;
+  question.style.zIndex = "110";
+
   const a = document.createElement("a"); 
   a.setAttribute('href', site.url);
   a.appendChild(arrow);
+
+  const a2 = document.createElement("a"); 
+  a2.setAttribute('href', "https://possible.social/join");
+  a2.appendChild(question);
 
   const portal = document.createElement("div"); 
   portal.style.width = '140px';
@@ -92,4 +104,5 @@ window.addEventListener('load', function () {
 
   document.getElementsByTagName('body')[0].appendChild(portal);
   document.getElementsByTagName('body')[0].appendChild(a);
+  document.getElementsByTagName('body')[0].appendChild(a2);
 })
